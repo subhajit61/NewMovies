@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+   <link rel="stylesheet" href="stylesheets/footer.css">
+  <style>
+ .container{
+  height:800vh;
+  background-color: #191A20;
+  }
+  
+  .Home{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .Home{
+    font-size: 13px;
+    color: white;
+    margin: 25px 10px 10px 20px;
+    line-height: 22px;
+  }
+  .Home p a{
+    word-spacing: 10px;
+  }
+  
+  hr{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1px;
+    margin-bottom: 0px;
+  }
+   
+  .title{
+    color: white;
+    margin: 25px 10px 10px 20px;
+  }
+  .date{
+    font-size: 13px;
+    color: #C7C9DD;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  .watch{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height:100px;
+  }
+  .watch a img{
+    width: 330px;
+    height: 220px;
+  }
+  .description{
+    margin-top: 80px;
+    color: #B1B2C0;
+    font-size: 17px;
+    padding: 0 20px 0 15px;
+    line-height: 25px;
+  }
+  .description a{
+    color:  #78D078;
+    font-weight: bold;
+  }
+  .title2{
+    text-align: center;
+    color: aqua;
+    margin: 15px;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  .seriesinfo{
+    margin-left: 20px;
+  }
+  .seriesinfo h4{
+    color: #EB902B;
+    margin-bottom: 20px;
+  }
+  .seriesinfo h6 a{
+    color:#7CEB2B;
+    font-size: 15px;
+  }
+   .seriesinfo h6{
+     margin-bottom: 9px;
+   }
+  .seriesinfo h6 a:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+  
+  .seriesinfo p{
+    color: #B1B2C0;
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+  .plot{
+    text-align: center;
+  }
+  
+  .plot i{
+    font-weight: bold;
+    color:#BF23A8;
+  }
+  .plot p{
+    color: #B1B2C0;
+    font-size: 17px;
+    margin: 20px 10px 20px 17px;
+  }
+  .screenshots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+  }
+  #screenshots{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E88516;
+  }
+  .screenshots img{
+    width: 355px;;
+    height: auto;
+    margin-bottom: 10px;
+  }
+ h4{
+   text-align: center;
+   color: white;
+   margin-top: 6px;
+   margin-bottom: 20px;
+ }
+ .downbtn{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ .downbtn button{
+   width: 155px;
+   height: 40px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   border: none;
+   box-shadow: 0px 1px 5px white;
+ }
+ .downbtn .btn1{
+   background: linear-gradient( to bottom right, aqua, #16D85B);
+   
+ }
+ .downbtn .btn2{
+   background: linear-gradient( to bottom right, red, #FFC700);
+ }
+ .downbtn .btn3{
+   background: linear-gradient( to bottom right, #6F2D71 , #FF00A5);
+ }
+ .downbtn button a{
+   font-weight: bold;
+ }
+ .downbtn #btn1{
+ background: linear-gradient( to bottom right, red,  #FFC700);
+ }
+ .downbtn #btn2{
+  background: linear-gradient( to bottom right, #E8B500, black);
+ }
+  .downbtn #btn3{
+  background: linear-gradient( to bottom right, #3C53B2, deeppink);
+  }
+  .outro{
+    margin: 7px; 
+  }
+  .outro p{
+    font-size: 17px;
+    color: #B1B2C0 ;
+    line-height: 25px;
+    text-align: center;
+  }
+ .outro h4{
+   color: #1FFF06;
+ }
+ .outro p a{
+   font-weight: bold;
+   color: darkorange;
+ }
+ .downapp{
+   display: flex;
+   justify-content: center;
+ }
+  .downapp button{
+   width: 270px;
+   height: 45px;
+    background-color: darkorchid;
+    border: none;
+    border-radius: 15px 0px ;
+    font-size: 15px;
+    font-weight:bold;
+    color: #fff;
+    margin: 30px;
+    
+ }
+ .comment{
+   margin-top: 30px;
+ }
+  .comment h4{
+   text-align: left;
+   margin: 0px 20px  10px 0px;
+ }
+ #comment{
+   height: 220px;
+   width: 350px;
+   background-color: #191A20;
+   color: white;
+   margin:20px 0 10px px;
+   border:solid #968780;
+ }
+ .comment{
+   margin-left: 20px;
+ }
+ .comment .name{
+   height: 50px;
+   width: 350px;
+   margin: 10px 0 10px ;
+   border: solid #968780;
+   background-color: #191A20;
+   color:white;
+ }
+ .comment .cheak{
+   
+   margin-left: 10px;
+ }
+ .comment p{
+   display: inline;
+   color: lightgray;
+   font-size: 17px;
+ }
+ .comment button{
+   margin: 40px 0 40px 0 ;
+   height: 40px;
+   width: 150px;
+   color: white;
+   font-weight: bold;
+   border: 0;
+   background-color:  #F701C6;
+ }
+ .comment button:hover{
+   background: linear-gradient(to bottom left, white, grey);
+ }
+ 
+ 
+ @media (min-width: 782px) {
+    .container {
+      background-color: #191A20;
+      height: 230vh;
+      }
+    .comment{
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+    }
+ }
+ 
+ 
+  </style>
+</head>
+<body>
+  
+  
+  <h2 id="header">NewMovies.com</h2>
+  
+  <div class="container">
+    
+    <div class="category1">
+      <button class="color1"><a href="#">DUAL AUDIO CONTENT</a></button>
+      <button class="color2"><a href="#">HIP CONTENT</a></button>
+      <button class="color3"><a href="#"><img src="Images/Telegram.png">Join Telegram</a></button>
+      <button class="color4"><a href="#">HOW TO DOWNLOAD</a></button>
+    </div>
+    
+    <div class="category2">
+       <button style="padding:9px 15px"><a href="#">420P</a></button>
+       <button style="padding:9px 15px"><a href="#">720P</a></button>
+       <button style="padding:9px 15px"><a href="#">1080P</a></button>
+       <button><a href="#">1080P <b>[60FPS]</b></a></button>
+       <button><a href="#">2160P <b>4K</b></a></button>
+       <button><a href="#">TRENDING</a></button>
+       <button><a href="#">NETFLIX</a></button>
+       <button><a href="#">AMZN PRIME VIDEO</a></button>
+       <button><a href="#">DSNP+ HOTSTAR</a></button>
+       <button><a href="#">SONYLIV</a></button>
+       <button><a href="#">ZEE5</a></button>
+       <button><a href="#">VOOT</a></button>
+       <button><a href="#">DISCOVERY+</a></button>
+       <button><a href="#">MX PLAYER</a></button>
+       <button><a href="#">BENGALI</a></button>
+       <button><a href="#">GUJRATI</a></button>
+       <button><a href="#"><b>PANJABI MOVIES</b></a></button>
+       <button><a href="#">HOICHOI</a></button>
+       <button><a href="#"><b>MARATHI MOVIES</b></a></button>
+    </div>
+    
+    <div class="Home">
+      <p><a href="index.html"> Home </a> &#62; <a href="index.html">      Featured   </a> &#62;     Download Taaza Khabar (Season 1) Hindi Hotstar Special Complete Web Series 480p | 720p | 1080p WEB-DL
+      </p>
+    </div>
+    <hr>
+    <h2 class="title">Download Taaza Khabar (Season 1) Hindi Hotstar Special Complete Web Series 480p | 720p | 1080p WEB-DL</h2>
+    <p class="date">&#128466 FEBRUARY 2, 2023</p>
+    <hr>
+    <div class="watch">
+      <a href="#"><img src="Images/watch.png"></a>
+    </div>
+    <div class="description">
+    <p><a href="index.html">NewMovies</a> is best online platform for downloading<a href="index.html"> Bollywod Movies</a>. We provide direct G-Drive download link for fast and secure downloading. Click on the download button below and follow the steps to start download.</p>
+    </div>
+    
+    <h4 class="title2">Download Taaza Khabar (2023) Season 1 Hindi Web Series 480p, 720p & 1080p ~ DOTMovies</h4>
+    <div class="seriesinfo">
+      <h4>Series Info:</h4>
+      <h6><a href="https://www.imdb.com/title/tt22014226/">IMDb Rating:- 8.3/10</a></h6>
+      <p><b>Full Name:</b> Taaza Khabar</p>
+      <p><b>Season:</b> 1</p>
+      <p><b>Epiaode:</b> 6</p>
+      <p><b>Language:</b> Hindi</p>
+      <p><b>Release Year:</b> 2023</p>
+      <p><b>Quality:</b> 480p || 720p || 1080p || 2160p 4K – <b style="color:red;">WEB-DL</b></p>
+      <p><b>Size:</b> 130MB || 250MB || 1GB || 4GB (Each Episode)</p>
+      <p><b>Format:</b> MKV</p>
+      
+    </div>
+    <div class="plot">
+    <i>: Series synopsis/PLOT :</i>
+    <p>A Sanitation worker, how he stumbles upon magical powers which leads to a riveting new ride for the man, and how it stirs his humble life.</p>
+    </div>
+    <h4 id="screenshots">: SCREENSHOTS :</h4> 
+    <div class="screenshots">
+     
+   
+    <img src="Images/screenshot2.jpg">
+    <img src="Images/screenshot1.jpg">
+    
+    </div>
+    <hr style="margin-bottom: 20px;">
+    <h4>Taaza Khabar S01 <b style="color: yellow;">Hindi</b> <b style="color: #E88516;">Single Episodes</b> 480p [150MB/E]</h4>
+    <div class="downbtn">
+      <button class="btn1"><a href="#"> &#9889;G-DIRECT</a></button>
+      <button class="btn2"><a href="#"> &#9889;V-CLOUD</a></button>
+      <button class="btn3"><a href="#">BATCH/ZIP [850MB]</a></button>
+    </div>
+    <h4>
+      Taaza Khabar S01 <b style="color: yellow;">Hindi </b> <b style="color: #E88516;">Single Episodes</b> 720p [250MB/E]
+    </h4>
+    <div class="downbtn">
+      <button class="btn1"><a href="#"> &#9889;G-DIRECT</a></button>
+      <button class="btn2"><a href="#"> &#9889;V-CLOUD</a></button>
+      <button class="btn3"><a href="#">BATCH/ZIP [1.5 GB]</a></button>
+    </div>
+    <h4>
+      Taaza Khabar S01 <b style="color: yellow;">[Hindi & Multi Audio]</b> <b style="color: #E88516;">Single Episodes</b> 1080p [1GB/E]
+    </h4>
+    <div class="downbtn">
+      <button id="btn1"><a href="#"> &#9889;G-DIRECT</a></button>
+      <button id="btn2"><a href="#"> &#9889; G-DRIVE [LOGIN] &#9889 </a></button>
+      <button id="btn3"><a href="#">BATCH/ZIP [6.4 GB]</a></button>
+    </div>
+    <h4>
+      Taaza Khabar S01 <b style="color: yellow;">[Hindi & Multi Audio]</b> <b style="color: #E88516;">Single Episodes</b> 1060p 4k HDR[4GB/E]
+    </h4>
+    <div class="downbtn">
+    <button id="btn2"><a href="#"> &#9889; G-DRIVE [LOGIN] &#9889 </a></button>
+      <button id="btn3"><a href="#">BATCH/ZIP [23.8 GB]</a></button>
+    </div>
+    <hr style="margin-top: 15px;">
+    <div class="outro">
+    <h4>Winding Up</h4>
+    <p>Thank You For Visiting <a href="index.html">NewMovies</a> The Prefect Spot For HD Bollywood Movies & TV Series Download. So Please Keep Downloading & Keep Sharing. Enjoy!</p>
+  
+    </div>
+    <div class="downapp">
+      <button>
+        <a href="blank">
+       DOWNLOAD ALLMOVIELAND APK
+       </a>
+    </button>
+    </div>
+    <div class="comment">
+      <h4>LEAVE YOUR COMMENT</h4>
+      <input type="text" placeholder="Your Comment*" id="comment">
+      <input type="text" placeholder="Your Name*" class="name">
+       <input type="text" placeholder="Your Email*" class="name">
+        <input type="text" placeholder="Your Website*" class="name">
+        <p><input type="checkbox" class="cheak">
+        Save my name, email, and website in this browser for the next time I comment.</p>
+        <button><a href="#">POST COMMENT</a></button>
+    </div>
+    
+    
+    
+    
+    
+    
+  </div>
+
+  <footer>
+    <p style="padding: 10px;">Copyright©2023. Created by Subhajit
+          &#10084;NewMovies&#10084;</p>
+     <hr>
+    <div class="about">
+      <p style="padding: 14px;"><a href="#">&#128222;Contact Us </a>| <a href="#">&#128232;Request Us </a>|<a href="#"> &#128217;DMCA </a>| <a href="#">&#128196; About Us </a>|<a href="#"> &#128209; Site Map</a></p>
+      <hr style=" margin-bottom: 5px;">
+    </div>
+  </footer>
+</body>
+</html>
